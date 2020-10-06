@@ -17,13 +17,13 @@
   ### 2. Examples
 * "**node caesar-cipher -a encode -s 1 -i input.txt -o output.txt**"
     * *input.txt  -> "This is my code! 1234 Привет Мир"*
-    * *output.txt -> "Sghr hr lx bncd! 1234 Привет Мир"*
+    * *output.txt -> "Vjku ku oa eqfg! 1234 Привет Мир"*
 
 * "**node caesar-cipher -a encode -s 1 -i input.txt**"
     * *input.txt  -> "This is my code! 1234 Привет Мир"*
-    * *output will be in command line -> "Sghr hr lx bncd! 1234 Привет Мир"*
+    * *output will be in command line -> "Vjku ku oa eqfg! 1234 Привет Мир"*
 
 * "**node caesar-cipher -a encode -s 1**"
     * *input will be reciving through command line -> "This is my code! 1234 Привет Мир"*
-    * *output will be in command line -> "Sghr hr lx bncd! 1234 Привет Мир"*
+    * *output will be in command line -> "Vjku ku oa eqfg! 1234 Привет Мир"*
  
