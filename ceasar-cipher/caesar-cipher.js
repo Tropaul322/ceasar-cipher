@@ -47,7 +47,7 @@ const checkInput = (args, flags) => {
       process.stdin.on("readable", () => {
         const stdin = process.stdin.read();
         if (stdin) {
-          checkOutput(args, caesarCipher.caesarCipherEncode(stdin, flags.shift));
+          checkOutput(args, flags.action === 'encode' ? caesarCipher.caesarCipherEncode(chunk, flags.shift) : caesarCipher.caesarCipherDecode(chunk, flags.shift));
           process.stdin.resume();
         }
       });
