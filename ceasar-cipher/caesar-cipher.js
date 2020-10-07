@@ -41,7 +41,7 @@ const checkInput = (args, flags) => {
       const readStream = fs.createReadStream(`${__dirname}/${args.input}`, "utf8");
       readStream.on("error", (err) => console.error('File with this name doesn\'t exist:' + err))
       readStream.on("data", (chunk) => {
-        checkOutput(args, flags.action === 'encode' ? caesarCipher.caesarCipherEncode(chunk, flags.shift) : caesarCipher.caesarCipherDecode(chunk, flags.shift));
+        checkOutput(args, flags.action === 'encode' ? caesarCipher.caesarCipherEncode(stdin, flags.shift) : caesarCipher.caesarCipherDecode(stdin, flags.shift));
       })
     } else {
       process.stdin.on("readable", () => {
